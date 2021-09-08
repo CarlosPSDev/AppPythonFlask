@@ -1,0 +1,24 @@
+<!--Plantilla para editar contacto recoge y muestra el valor con value="{{ contact.1 }}"-->
+
+<!--Importamos la plantilla definida en layout para q aplique ese formato-->
+{% extends 'layout.html' %}
+{% block body %}
+<div class="col-md-4 offset-md-4"><!--lo colocamos en una columna q ocupa 4 col y está separada 4 col, se centra-->
+    <div class="card card-body"><!--lo metemos en una tarjeta-->
+        <form action="/update/{{contact.0}}" method="POST"><!--Retorna el id del contacto-->
+            <div class="form-group">
+                <input type="text" name="fullname" placeholder="fullname" value="{{ contact.1 }}" class="form-control">
+            </div>
+            <div class="form-group"><!--form group agregar una separacion entre los input-->
+            </div>
+                <input type="text" name="phone" placeholder="phone" value="{{ contact.2 }}" class="form-control">
+            <div class="form-group">
+                <input type="text" name="email" placeholder="email" value="{{ contact.3 }}"class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success" btn-block>Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
