@@ -1,1 +1,1 @@
-![](https://github.com/CarlosPSDev/AppAndroid_HealthyAir/blob/master/app/src/main/assets/splash.PNG)
+![](https://github.com/CarlosPSDev/AppPythonFlask/blob/main/static/imgs/CapturaFlask.PNG)
